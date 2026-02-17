@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <title>Login Animated</title>
+</head>
+<body>
+
+    <div class="container-provisional">
+        <div class="container-principal" id="container">
+            
+            <!-- Formulario de Login -->
+            <div class="form-container">
+                <form class="formulario">
+                    <h1 class="titulo-principal">Iniciar Sesión</h1>
+                    <p class="info-sesion info">Coloca tus datos y vuelve a entrar en tu cuenta</p>
+                    <div class="social-icons__container">
+                        <span class="material-symbols-outlined">search</span>
+                        <span class="material-symbols-outlined">home</span>
+                        <span class="material-symbols-outlined">login</span>
+                        <span class="material-symbols-outlined">person</span>
+                    </div>
+                    <input type="email" required class="input-email input" placeholder="Email">
+                    <input type="password" required class="input-password input" placeholder="Contraseña">
+                    <button type="submit" class="button-inicio_sesion button">Iniciar</button>
+                </form>
+            </div>
+    
+            <!-- Formulario de Registro (agregado) -->
+            <div class="registro-container">
+                <form class="formulario">
+                    <h1 class="titulo-principal">Registrarse</h1>
+                    <p class="info-registro info">Crea tu cuenta con tus datos</p>
+                    <div class="social-icons__container">
+                        <span class="material-symbols-outlined">search</span>
+                        <span class="material-symbols-outlined">home</span>
+                        <span class="material-symbols-outlined">login</span>
+                        <span class="material-symbols-outlined">person</span>
+                    </div>
+                    <input type="text" required class="input" placeholder="Nombre">
+                    <input type="email" required class="input" placeholder="Email">
+                    <input type="password" required class="input" placeholder="Contraseña">
+                    <button type="submit" class="button-inicio_sesion button">Registrarse</button>
+                </form>
+            </div>
+        
+        </div>
+    
+        <div class="toggle-container">
+            <div class="toggle">
+                
+                <div class="toggle-panel toggle-right">
+                    <h2 class="titulo-registro">¿No tienes cuenta?</h2>
+                    <p class="info-registro info">Regístrate con tus datos y crea una cuenta nueva</p>
+                    <button class="button-cambio button" id="register">Registrarte</button>
+                </div>
+        
+                <div class="toggle-panel toggle-left">
+                    <h2 class="titulo-registro">¿Ya tienes cuenta?</h2>
+                    <p class="info-registro info">Vuelve a loguearte para seguir conectado</p>
+                    <button class="button-cambio button" id="login">Iniciar Sesión</button>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
